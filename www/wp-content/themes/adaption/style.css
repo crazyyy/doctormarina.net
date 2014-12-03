@@ -1278,6 +1278,7 @@ body {
 #header-image.custom-header {
   border-bottom: none;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.53);
 }
 #header-image.custom-header a {
 position: relative;
@@ -2002,4 +2003,34 @@ span.infinite-loader .spinner {
   background-image: url(img/phone-ico.png);
   background-repeat: no-repeat;
   background-position: left center;
+}
+/* (min-width: 40.063em) and */
+/* @media (max-width: 1150px) {
+  .head-phone {
+    font-size: 25px;
+  }
+} */
+@media (max-width: 1150px) {
+    #page {
+      width: 100%;
+    }
+} 
+@media (max-width: 720px) {
+/*   .headerok-nav {
+  width: 71%;
+  overflow: hidden;
+}
+.headerok-nav a{
+  font-size: 14px;
+} */
+  .head-phone {
+    font-size: 23px;
+    width: 185px;
+    padding: 7px 0;
+  }
+}
+@media (max-width: 630px) {
+  .headerok-nav {
+    display: none;
+  }
 }
