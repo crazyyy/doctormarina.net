@@ -1277,8 +1277,23 @@ body {
 
 #header-image.custom-header {
   border-bottom: none;
+  position: relative;
+  height: 185px;
 }
-
+#header-image.custom-header span{
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-style: italic;
+  font-family: 'Arimo', sans-serif;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.53);
+}
 #header-image.no-header {
   background: #cf000f;
   border-bottom: 1px solid #a00101;
@@ -1915,3 +1930,4 @@ span.infinite-loader .spinner {
   }
 }
 /* min-width 1921px, xlarge screens */
+
