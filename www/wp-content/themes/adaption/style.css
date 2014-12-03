@@ -1278,9 +1278,17 @@ body {
 #header-image.custom-header {
   border-bottom: none;
   position: relative;
-  height: 185px;
 }
-#header-image.custom-header span{
+#header-image.custom-header a {
+position: relative;
+display: block;
+width: 100%;
+height: 100%;
+}
+#header-image.custom-header img {
+  height: 100%;
+}
+#header-image.custom-header a:after{
   display: block;
   padding: 10px 20px;
   font-size: 16px;
@@ -1291,8 +1299,10 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.53);
+  content: 'Марина Невдовец';
 }
 #header-image.no-header {
   background: #cf000f;
@@ -1931,3 +1941,25 @@ span.infinite-loader .spinner {
 }
 /* min-width 1921px, xlarge screens */
 
+/* 2014-12-03 */ 
+.headerok {
+  font-family: 'Arimo', sans-serif;
+  padding: 50px 0 0;
+}
+.headerok h1{
+  font-size: 36px;
+  font-weight: bold;
+  color: #cf000f;
+  text-decoration: none;
+  margin: 0 0 7px;
+  line-height: 1;
+}
+.headerok h1 a{
+  color: #cf000f; 
+}
+.headerok h2{
+  margin: 0 0 30px;
+  font-size: 18px;
+  color: #aaaaaa;
+  line-height: 1;
+}

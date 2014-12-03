@@ -14,9 +14,12 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<aside class="headerok">
-			
-		</aside>
+		<aside class="headerok entry-meta">
+			<!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Доктор Марина Невдовец</a></h1>
+			<!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
+			<h2 class="site-description">профессиональный косметолог</h2>
+		</aside><!-- headerok entry-meta -->
 		<main id="main" class="site-main" role="main">
 
 			<?php if ( have_posts() ) : ?>
