@@ -16,34 +16,7 @@ $formats = get_theme_support( 'post-formats' );
 		</div><!-- .entry-thumbnail -->
 	<?php endif; ?>
 
-	<div class="entry-meta entry-top">
 
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'adaption' ), __( '1 Comment', 'adaption' ), __( '% Comments', 'adaption' ) ); ?></span>
-		<?php endif; ?>
-
-		<?php adaption_posted_on(); ?>
-
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'adaption' ) );
-			if ( 'post' == get_post_type() && $category_list && adaption_categorized_blog() ) :
-			?>
-				<span class="cat-links"><?php echo $category_list; ?></span>
-			<?php endif; ?>
-
-		<?php endif; // End if 'post' == get_post_type() ?>
-
-		<?php if ( 'post' == get_post_type() && $format && in_array( $format, $formats[0] ) ): ?>
-			<span class="entry-format">
-				<a href="<?php echo esc_url( get_post_format_link( $format ) ); ?>" title="<?php echo esc_attr( sprintf( __( 'All %s posts', 'adaption' ), get_post_format_string( $format ) ) ); ?>">
-					<?php echo get_post_format_string( $format ); ?>
-				</a>
-			</span>
-		<?php endif; ?>
-
-	</div><!-- .entry-meta -->
 
 
 	<header class="entry-header">

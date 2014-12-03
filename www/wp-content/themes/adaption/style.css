@@ -1963,3 +1963,43 @@ span.infinite-loader .spinner {
   color: #aaaaaa;
   line-height: 1;
 }
+.headerok-nav {
+  display: inline-block;
+  width: 69%;
+  padding: 0 0 10px;
+}
+.headerok-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.headerok-nav li{
+  display: inline-block;
+  padding: 0 15px;
+  border-right: 1px solid #b4b4b4;
+}
+.headerok-nav li:first-child{
+  padding-left: 0;
+}
+.headerok-nav li:last-child{
+  padding-right: 0;
+  border: 0;
+}
+.headerok-nav li a{
+    font-size: 16px;
+    color: #414040;
+    text-decoration: none;
+    font-family: 'Arimo', sans-serif;
+}
+.head-phone {
+  width: 30%;
+  display: inline-block;
+  text-align: right;
+  font-size: 26px;
+  color: #cf000f !important;
+  font-weight: normal;
+  text-decoration: none;
+  background-image: url(img/phone-ico.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}

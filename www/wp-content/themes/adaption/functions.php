@@ -42,6 +42,7 @@ function adaption_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'adaption' ),
 		'social'  => __( 'Social Links Menu', 'adaption' ),
+		'headerok'  => __( 'Page Header', 'adaption' ),
 	) );
 
 	// Enable support for Post Formats.
