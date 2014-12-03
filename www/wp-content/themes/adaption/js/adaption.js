@@ -65,4 +65,8 @@
         $( this ).attr( 'aria-expanded', $( this ).attr( 'aria-expanded' ) == 'false' ? 'true' : 'false');
     } );
 
+    $('.headerok-small .menu-page-header-menu-container').click ( function( e ) {
+        $( this ).toggleClass( 'menu-display' );
+    });
+
 })(jQuery);

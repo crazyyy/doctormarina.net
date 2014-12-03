@@ -231,16 +231,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 25.6px;
-  font-size: 2.56rem;
-  font-weight: 700;
-  line-height: 1.17188;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 20px;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 1.5;
 }
 
@@ -2093,6 +2091,10 @@ span.infinite-loader .spinner {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: none;
+}
+.menu-display ul{
+  display: block;
 }
 .headerok-small li { 
   padding: 13px 35px;
