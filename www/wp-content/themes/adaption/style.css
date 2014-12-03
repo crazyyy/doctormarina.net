@@ -1001,7 +1001,7 @@ img.aligncenter {
 
 #mobile-panel {
   background: #cf000f;
-  height: 45px;
+  /* height: 45px; */
   overflow: hidden;
   width: 100%;
 }
@@ -2029,8 +2029,77 @@ span.infinite-loader .spinner {
     padding: 7px 0;
   }
 }
-@media (max-width: 630px) {
+@media (max-width: 1025px) {
   .headerok-nav {
     display: none;
   }
+  .headerok h1,
+  .headerok h2{ 
+    display: none;
+  }
+  .head-phone {
+    float: right;
+  }
+  .headerok {
+    padding: 10px 0 0;
+    height: 60px;
+  }
 }
+#mobile-panel {
+    position: relative;
+    overflow: visible;
+    height: 96px;
+}
+#mobile-panel h1{
+  font-size: 30px;
+  color: #ffffff;
+  float: left !important;
+  margin-left: 70px !important;
+  padding: 12px 0 !important;
+  font-size: 30px !important;
+  font-family: "Arimo", sans-serif;
+  text-transform: capitalize;
+}
+#mobile-panel h2{
+  font-size: 18px !important;
+  color: #aaaaaa !important;
+  float: left;
+  margin-left: 70px;
+  font-family: "Arimo", sans-serif;
+}
+#mobile-panel h1{
+
+}
+.headerok-small {
+  width: 60px;
+  height: 96px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(img/burger.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.headerok-small div{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+ .headerok-small ul {
+  position: absolute;
+  left: 0;
+  top: 96px;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.headerok-small li { 
+  padding: 13px 35px;
+  border-top: 2px solid #fff;
+  background-color: #cf000f;
+}
+.headerok-small li a{
+  color: #fff;
+  text-decoration: none;
+} 

@@ -23,14 +23,16 @@
 	<?php do_action( 'before' ); ?>
 
 	<div id="mobile-panel">
-		<?php if ( ( has_nav_menu( 'social' ) ) || ( has_nav_Menu( 'primary') ) ) : ?>
-			<div id="mobile-link"></div><!-- #mobile-link -->
-		<?php endif; ?>
-		<?php if ( is_active_sidebar( 'sidebar-1' ) || is_active_sidebar( 'sidebar-2' ) ) : ?>
-			<div id="widget-link"></div><!-- #widget-link -->
-		<?php endif; ?>
+		<?php
+		if ( has_nav_menu( 'headerok' ) ) : ?>
+			<div id="headerok-nav" class="headerok-small">
+				<?php wp_nav_menu( array(
 
-		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				) ); ?>
+			</div><!-- headerok-nav -->
+		<?php endif; ?>
+		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Доктор Марина Невдовец</a></h1>
+		<h2 class="site-description">профессиональный косметолог</h2>
 	</div>
 
 	<div id="panel-block">
