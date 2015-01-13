@@ -308,6 +308,21 @@ h2.site-description {
   font-weight: 200;
   opacity: 0.8;
 }
+@media (max-width: 800px) {
+  h2.site-description {
+    background-color: #cf000f;
+    opacity: 1;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+}
+@media (min-width: 350px) and (max-width: 350px) {
+  h2.site-description {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+}
 
 h2.comments-title {
   font-size: 25.6px;
@@ -2062,7 +2077,7 @@ span.infinite-loader .spinner {
   font-size: 18px !important;
   color: #aaaaaa !important;
   float: left;
-  margin-left: 70px;
+  padding-left: 70px;
   font-family: "Arimo", sans-serif;
 }
 #mobile-panel h1{
@@ -2104,4 +2119,4 @@ span.infinite-loader .spinner {
 .headerok-small li a{
   color: #fff;
   text-decoration: none;
-} 
+}
