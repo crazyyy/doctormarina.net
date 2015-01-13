@@ -85,7 +85,20 @@ html {
 body {
   background: white;
 }
+/* clearfix */
+.clearfix:before {
+  display: table;
+  content: ""; }
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both; }
 
+.clear {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
 article,
 aside,
 details,
@@ -2007,6 +2020,8 @@ span.infinite-loader .spinner {
 }
 .head-phone {
   width: 30%;
+  height: 50px;\
+  display: block;
   display: inline-block;
   text-align: right;
   font-size: 26px;
@@ -2057,6 +2072,11 @@ span.infinite-loader .spinner {
     padding: 10px 0 0;
     height: 60px;
   }
+}
+@media (max-width: 450px) {
+      .headerok.entry-meta {
+      border-bottom: 0;
+    }
 }
 #mobile-panel {
     position: relative;
